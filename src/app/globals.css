@@ -23,6 +23,27 @@ body {
     radial-gradient(ellipse at 80% 80%, rgba(84, 110, 122, 0.10) 0%, transparent 50%);
 }
 
+/* Pencil Cursor - Only for Desktop (Fine pointer) */
+@media (pointer: fine) {
+  body, a, button, .cursor-pointer, [role="button"] {
+    cursor: url('/pencil.svg') 0 24, auto !important;
+  }
+}
+
+/* Neon Glow Effect */
+.neon-blue {
+  box-shadow: 0 0 15px rgba(25, 118, 210, 0.3), 0 0 30px rgba(25, 118, 210, 0.15);
+}
+
+.neon-blue:hover {
+  box-shadow: 0 0 25px rgba(25, 118, 210, 0.6), 0 0 50px rgba(25, 118, 210, 0.3);
+  border-color: rgba(25, 118, 210, 0.6) !important;
+}
+
+.neon-white:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.7), 0 0 50px rgba(255, 255, 255, 0.4);
+}
+
 /* Glassmorphism utility */
 .glass {
   background: linear-gradient(135deg, rgba(255,255,255,0.82) 60%, rgba(25,118,210,0.10) 100%);

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import HeroCards from "../components/HeroCards";
 import ClassModal from "../components/ClassModal";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -17,6 +18,7 @@ export default function Home() {
         <HeroCards onOpenModal={() => setModalOpen(true)} />
         <ClassModal open={modalOpen} onClose={() => setModalOpen(false)} />
       </main>
+      <Footer />
     </div>
   );
 }

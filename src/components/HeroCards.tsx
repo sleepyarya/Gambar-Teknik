@@ -18,14 +18,13 @@ export default function HeroCards({ onOpenModal }: { onOpenModal: () => void }) 
         <div className="mt-3 mx-auto h-1 w-24 rounded-full" style={{ background: 'linear-gradient(90deg, #1976D2, #546E7A)' }} />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 w-full max-w-6xl px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-6xl px-6">
         {/* Materi Card */}
         <div
           id="materi"
-          className="rounded-2xl p-6 flex flex-col items-center justify-center min-h-[200px] transition-all hover:scale-105 cursor-pointer hover:shadow-xl"
+          className="rounded-2xl p-6 flex flex-col items-center justify-center min-h-[200px] transition-all hover:scale-105 cursor-pointer neon-blue"
           style={{
             background: 'linear-gradient(135deg, rgba(255,255,255,0.92) 60%, rgba(25,118,210,0.08) 100%)',
-            boxShadow: '0 4px 24px rgba(13,71,161,0.13)',
             border: '1.5px solid rgba(25,118,210,0.18)',
           }}
         >
@@ -42,10 +41,9 @@ export default function HeroCards({ onOpenModal }: { onOpenModal: () => void }) 
           href="https://drive.google.com/file/d/1a9-e1TopQJgmtW-v3-Dyth4d77PBpRBv/view"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl p-6 flex flex-col items-center justify-center min-h-[200px] transition-all hover:scale-105 hover:shadow-xl no-underline"
+          className="rounded-2xl p-6 flex flex-col items-center justify-center min-h-[200px] transition-all hover:scale-105 no-underline neon-blue"
           style={{
             background: 'linear-gradient(135deg, rgba(255,255,255,0.92) 60%, rgba(84,110,122,0.08) 100%)',
-            boxShadow: '0 4px 24px rgba(84,110,122,0.13)',
             border: '1.5px solid rgba(84,110,122,0.20)',
           }}
         >
@@ -58,7 +56,7 @@ export default function HeroCards({ onOpenModal }: { onOpenModal: () => void }) 
 
         {/* Pengumpulan Tugas Card */}
         <button
-          className="rounded-2xl p-6 flex flex-col items-center justify-center min-h-[200px] transition-all hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="rounded-2xl p-6 flex flex-col items-center justify-center min-h-[200px] transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-400 neon-white"
           onClick={onOpenModal}
           style={{
             background: 'linear-gradient(135deg, #1565C0 0%, #1976D2 55%, #546E7A 100%)',
@@ -75,10 +73,9 @@ export default function HeroCards({ onOpenModal }: { onOpenModal: () => void }) 
 
         {/* Evaluasi Card */}
         <div
-          className="rounded-2xl p-6 flex flex-col items-center justify-center min-h-[200px] transition-all hover:scale-105 cursor-pointer hover:shadow-xl"
+          className="rounded-2xl p-6 flex flex-col items-center justify-center min-h-[200px] transition-all hover:scale-105 cursor-pointer neon-blue"
           style={{
             background: 'linear-gradient(135deg, rgba(255,255,255,0.92) 60%, rgba(25,118,210,0.08) 100%)',
-            boxShadow: '0 4px 24px rgba(13,71,161,0.13)',
             border: '1.5px solid rgba(25,118,210,0.18)',
           }}
         >
