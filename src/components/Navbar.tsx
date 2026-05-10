@@ -11,15 +11,13 @@ export default function Navbar() {
         <div className="text-white font-bold text-xl tracking-wide select-none drop-shadow">SMKN 1 Kediri</div>
       </div>
       <div className="flex gap-6 text-blue-100 font-medium text-base">
-        <Link href="/" className="hover:text-white hover:drop-shadow transition-all px-2 py-1 rounded hover:bg-white/10">Beranda</Link>
-        <Link href="#materi" className="hover:text-white hover:drop-shadow transition-all px-2 py-1 rounded hover:bg-white/10">Materi</Link>
         <a 
-          href="https://drive.google.com/file/d/1a9-e1TopQJgmtW-v3-Dyth4d77PBpRBv/view" 
+          href="https://sites.google.com/view/profilsmanegeri1kediri" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className="hover:text-white hover:drop-shadow transition-all px-2 py-1 rounded hover:bg-white/10"
+          className="hover:text-white hover:drop-shadow transition-all px-3 py-1 rounded hover:bg-white/10"
         >
-          Tugas
+          Web Profil SMAN 1 KEDIRI
         </a>
       </div>
     </nav>

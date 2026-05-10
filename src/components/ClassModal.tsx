@@ -90,7 +90,7 @@ export default function ClassModal({ open, onClose }: { open: boolean; onClose: 
                 Pilih Kelas
               </h2>
               <p className="text-xs text-center mb-5" style={{ color: "#78909C" }}>
-                Pilih kelas kamu untuk melihat daftar tugas
+                Pilih kelas kamu untuk Pengumpulan Tugas
               </p>
               <div className="flex flex-col gap-3 w-full">
                 {CLASSES.map((cls) => (
