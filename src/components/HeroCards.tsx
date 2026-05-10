@@ -21,6 +21,7 @@ export default function HeroCards({ onOpenModal }: { onOpenModal: () => void }) 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
         {/* Materi Card */}
         <div
+          id="materi"
           className="rounded-2xl p-8 flex flex-col items-center justify-center min-h-[220px] transition-all hover:scale-105 cursor-pointer hover:shadow-xl"
           style={{
             background: 'linear-gradient(135deg, rgba(255,255,255,0.92) 60%, rgba(25,118,210,0.08) 100%)',
@@ -37,6 +38,7 @@ export default function HeroCards({ onOpenModal }: { onOpenModal: () => void }) 
 
         {/* Tugas Card */}
         <a
+          id="tugas"
           href="https://drive.google.com/file/d/1a9-e1TopQJgmtW-v3-Dyth4d77PBpRBv/view"
           target="_blank"
           rel="noopener noreferrer"
