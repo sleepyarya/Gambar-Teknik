@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 };
 
 import Navbar from "../components/Navbar";
+import LoadingScreen from "../components/LoadingScreen";
 
 export default function RootLayout({
   children,
@@ -30,7 +31,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-zinc-50">
-        {/* Navbar is included in each page for now via page.tsx, but can be moved here for global nav */}
+        <LoadingScreen />
         {children}
       </body>
     </html>
