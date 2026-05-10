@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #EFF6FF;
+  --foreground: #1E293B;
+  --primary: #1976D2;
+  --primary-light: #42A5F5;
+  --primary-dark: #0D47A1;
+  --slate: #546E7A;
+  --slate-light: #90A4AE;
+  --slate-dark: #37474F;
+  --card-bg: rgba(255, 255, 255, 0.85);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans, 'Geist', 'Arial', 'Helvetica', sans-serif);
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+  background-image:
+    radial-gradient(ellipse at 20% 10%, rgba(25, 118, 210, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(84, 110, 122, 0.10) 0%, transparent 50%);
 }
+
+/* Glassmorphism utility */
+.glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.82) 60%, rgba(25,118,210,0.10) 100%);
+  box-shadow: 0 8px 32px 0 rgba(13, 71, 161, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(25, 118, 210, 0.15);
+}
+
+/* Smooth transitions for interactive elements */
+button, a, .card, .glass {
+  transition: all 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #E3F2FD; }
+::-webkit-scrollbar-thumb { background: #90CAF9; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #1976D2; }
