@@ -40,8 +40,8 @@ export default function LoadingScreen() {
           <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-bounce [animation-delay:-0.15s]" />
           <div className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-bounce" />
         </div>
-        <p className="text-sm font-medium text-slate-500 mt-2 uppercase tracking-tighter opacity-70">
-          Mempersiapkan Masa Depan...
+        <p className="text-sm font-bold text-slate-500 mt-2 uppercase tracking-widest opacity-80">
+          DD-DPIB 1 - GAMBAR TEKNIK
         </p>
       </div>
 

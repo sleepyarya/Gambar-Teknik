@@ -12,12 +12,12 @@ export default function Navbar() {
       </div>
       <div className="flex gap-6 text-blue-100 font-medium text-base">
         <a 
-          href="https://sites.google.com/view/profilsmanegeri1kediri" 
+          href="https://smkn1kediri.sch.id/" 
           target="_blank" 
           rel="noopener noreferrer" 
           className="hover:text-white hover:drop-shadow transition-all px-3 py-1 rounded hover:bg-white/10"
         >
-          Web Profil SMAN 1 KEDIRI
+          Web SMKN 1 KEDIRI
         </a>
       </div>
     </nav>

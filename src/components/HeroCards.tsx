@@ -3,7 +3,7 @@ import { BookOpen, FileText, UploadCloud, ClipboardList } from "lucide-react";
 
 export default function HeroCards({ onOpenModal }: { onOpenModal: () => void }) {
   return (
-    <section className="w-full flex flex-col items-center justify-center gap-8 mt-32 mb-12">
+    <section className="w-full flex flex-col items-center justify-center gap-8 mt-8 mb-12">
       {/* Hero Title */}
       <div className="text-center">
         <h1
